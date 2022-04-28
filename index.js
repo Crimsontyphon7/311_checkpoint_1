@@ -4,8 +4,7 @@ const app = express();
 const usersRouter = require('./routes/users');
 const port = process.env.PORT || 4000
 
-const idCounter = 10;
-global.idCounter = idCounter;
+
 
 app.use(bodyparser.json());
 app.use('/users', usersRouter);
